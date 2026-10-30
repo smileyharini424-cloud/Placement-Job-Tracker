@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5fb;
+    color: #202943;
+}
+
+header {
+    background: #263b80;
+    color: white;
+    padding: 28px 8%;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #e1e7ff;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card, .form-section, .applications {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #17255412;
+    margin-bottom: 22px;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 15px;
+    color: #64708a;
+}
+
+.card p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #263b80;
+    margin-bottom: 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5dbea;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    background: #263b80;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #4058a5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 13px 10px;
+    border-bottom: 1px solid #e5e9f2;
+    text-align: left;
+}
+
+th {
+    color: #64708a;
+    font-size: 13px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.delete-btn {
+    background: #c63838;
+    padding: 8px 12px;
+}
+
+#emptyMessage {
+    color: #64708a;
+    text-align: center;
+    padding: 12px;
+}
+
+@media (max-width: 650px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
